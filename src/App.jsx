@@ -1,89 +1,19 @@
 import './App.css'
-import Badge from './components/Badge'
-import Button from './components/Button'
 
 function App() {
 
 
   return (
-    <div>
-      {/* <h1 className="">Hello World</h1> */}
-      <div className='light border w-full h-fit p-4 flex flex-col justify-center items-center space-y-3'>
-
-        <Button 
-          size='small'
-          type='tertiary'
-          label='Label'
-          leftIcon='Github'
-          // rightIcon='Github'
-          // iconSize='larger'
-        />
-
-        <Badge 
-          size='small'
-          type='primary'
-          label='Label'
-          chip=''
-        />
-        <Badge 
-          size='medium'
-          type='secondary'
-          label='Label'
-          chip='true'
-        />
-        <Badge 
-          size='large'
-          type='tertiary'
-          label='Label'
-          chip=''
-        />
-        <Badge 
-          size='small'
-          type='success'
-          label='Label'
-          chip=''
-        />
-
+    <main className='flex flex-col items-center justify-center'>
+      <h1>Hello World</h1>
+      <p>My name is Anastasia</p>
+      <div id='layout' className='flex border-2 border-blue-700 w-3/4'>
+        <div className='w-1/4 h-10 bg-slate-500 border-2 border-red-600'></div>
+        <div className='w-1/4 h-10 bg-slate-500 border-2 border-red-600'></div>
+        <div className='w-1/4 h-10 bg-slate-500 border-2 border-red-600'></div>
+        <div className='w-1/4 h-10 bg-slate-500 border-2 border-red-600'></div>
       </div>
-      <div className='dark border bg-slate-900 w-full h-fit p-4 flex flex-col justify-center items-center space-y-3'>
-
-        <Button 
-          size='large'
-          type='tertiary'
-          // label='Label'
-          // leftIcon='Moon'
-          rightIcon='Github'
-          rounded='full'
-        />
-
-        <Badge 
-          size='small'
-          type='primary'
-          label='Label'
-          chip='true'
-        />
-        <Badge 
-          size='medium'
-          type='secondary'
-          label='Label'
-          chip='true'
-        />
-        <Badge 
-          size='large'
-          type='tertiary'
-          label='Label'
-          chip='true'
-        />
-        <Badge 
-          size='small'
-          type='success'
-          label='Label'
-          chip='true'
-        />
-
-      </div>
-
-    </div>
+    </main>
   )
 }
 

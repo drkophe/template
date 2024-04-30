@@ -1,12 +1,27 @@
 /* Import font here */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap'); */
+@font-face {
+  font-family: 'Gustavo';
+  src:  url("/src/assets/fonts/Gustavo_trial-Regular-BF65f254e22bb0e.otf"),
+        url("/src/assets/fonts/Gustavo_trial-Medium-BF65f254e1e1a08.otf"),
+        url("/src/assets/fonts/Gustavo_trial-Bold-BF65f254e21d829.otf");
+}
+@font-face {
+  font-family: 'Tartuffo';
+  src: url("/src/assets/fonts/Tartuffo_Trial-Regular-BF643371db1355b.otf");
+}
+
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 * {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Gustavo', sans-serif;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Tartuffo', sans-serif;
 }
 
 /* Scrollbar */
